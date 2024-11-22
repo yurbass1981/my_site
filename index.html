@@ -12,10 +12,27 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <script type="text/javascript">
+    $(document).ready(function () {
 
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+
+      $('.scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
+</script>
   <div class="main-wrapper">
     <!-- Шапка сайта -->
     <header class="header header--bg">
@@ -246,12 +263,12 @@
                           <a href="#">+7-921-777-19-91</a>
                         </li>
                       </ul>
-                      <h4 class="footer__subscribe__title">Напишите нам</h4>
-                      <div class="subscribe-section">
-                        <input type="email" class="form-control" size="50" placeholder="Enter Your Email" required />
-                        <button class="subscribe-section__button" type="button">
-                          <img src="assets/images/send-icon.png" alt="" />
-                        </button>
+                      <h4 class="footer__subscribe__title">Подпишитесь <img
+                        src="images/icons8-send-48.png" alt=""/></h4>
+                        <div class="subscribe-section">
+                          <input type="email" class="form-control" size="50"
+                                 placeholder="Введите Ваш E-mail" required/>
+                          <button class="subscribe-section__button" type="submit">Отправить</button>
                       </div>
                     </div>
                   </div>
@@ -288,7 +305,8 @@
           </footer>
           <!-- Подвал сайта (end) -->
         </div>
-
+        
+        <a href="#"><img src="images/icon_top.png" class="scrollup" alt="Кнопка Наверх"></a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
           </script>
