@@ -644,6 +644,7 @@
       box-shadow: 0 0 0 2px #fff, 0 0 0 4px #00aafe;
     }
 
-
-
-  
+    .no-click {
+      pointer-events: none;
+      cursor: default;
+    }
