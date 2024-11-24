@@ -2,8 +2,6 @@
 <html lang="ru-en">
 
 <head>
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ILYUSHIN & CO</title>
@@ -13,29 +11,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
   <link rel="stylesheet" href="css/style.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="script.js"></script>
-  <!-- <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script> -->
+  <script src="js/script.js"></script>
 </head>
 
 <body>
-  <script type="text/javascript">
-    $(document).ready(function () {
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-          $('.scrollup').fadeIn();
-        } else {
-          $('.scrollup').fadeOut();
-        }
-      });
-
-      $('.scrollup').click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-      });
-    });
-</script>
   <div class="main-wrapper">
     <!-- Шапка сайта -->
     <header class="header header--bg">
@@ -216,14 +195,13 @@
           <!-- О НАС (end) -->
 
           <!-- Подвал сайта -->
-
           <footer class="footer footer--bg">
             <div class="container">
               <div class="page-section">
                 <div class="row gutters-100">
                   <div class="col-md-4 col-lg-3">
                     <div class="footer__first">
-                      <h2 class="footer__title">ПОГОДА</h2>
+                      <h2 class="footer__title"></h2>
                       <!--pogodaiklimat.ru-->
                       <table cellpadding="3" cellspacing="0" border="0" width="150" class="pogodatab">
                         <tr>
@@ -239,7 +217,6 @@
                         </tr>
                       </table>
                       <!--pogodaiklimat.ru-->
-
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-2">
@@ -259,25 +236,26 @@
                       <ul>
                         <li>
                           <span class="glyphicon glyphicon-envelope"></span>
-                          <a href="#" class="no-click"><span class="__cf_email__" data-cfemail="">9217771991@mail.ru</span></a>
+                          <a href="#" class="no-click"><span class="__cf_email__"
+                              data-cfemail="">9217771991@mail.ru</span></a>
                         </li>
                         <li>
                           <span class="glyphicon glyphicon-earphone"></span>
                           <a href="#" class="no-click">+7-921-777-19-91</a>
                         </li>
                       </ul>
-                      <h4 class="footer__subscribe__title">Подпишитесь <img
-                        src="images/icons8-send-48.png" alt=""/></h4>
-                       <form action="mailto:yurbass1@rambler.ru">
-                        <div class="subscribe-section">
-                          <input type="email" class="form-control" size="50"
-                                 placeholder="Введите Ваш E-mail" required/>
+                      <h4 class="footer__subscribe__title">Подпишитесь <img src="images/icons8-send-48.png" alt="" />
+                      </h4>
+                      <div class="subscribe-section">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="433c1335-8551-4de2-b89b-182c7234019e">
+                          <input type="email" name="email" class="form-control" size="50"
+                            placeholder="Введите Ваш E-mail" required />
                           <button class="subscribe-section__button" type="submit">Отправить</button>
                       </div>
-                       </form>
+                      </form>
                     </div>
                   </div>
-
                   <div class="col-md-6 col-lg-4">
                     <div class="footer__fourth">
                       <h4 class="footer__title">ILYUSHIN & CO</h4>
@@ -309,7 +287,7 @@
           </footer>
           <!-- Подвал сайта (end) -->
         </div>
-    
+
         <a href="#"><img src="images/icon_top.png" class="scrollup" alt="Кнопка Наверх"></a>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
