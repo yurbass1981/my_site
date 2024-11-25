@@ -232,33 +232,25 @@
                   </div>
                   <div class="col-md-6 col-lg-3">
                     <div class="footer__third">
-                      <h2 id="contacts" class="footer__title">НАШИ КОНТАКТЫ</h2>
-                      <ul>
-                        <li>
-                          <span class="glyphicon glyphicon-envelope"></span>
-                          <a href="#" class="no-click"><span class="__cf_email__"
-                              data-cfemail="">9217771991@mail.ru</span></a>
-                        </li>
-                        <li>
-                          <span class="glyphicon glyphicon-earphone"></span>
-                          <a href="#" class="no-click">+7-921-777-19-91</a>
-                        </li>
-                      </ul>
-                      <h4 class="footer__subscribe__title">Подпишитесь <img src="images/icons8-send-48.png" alt="" />
-                      </h4>
+                      <h2 id="contacts" class="footer__title">ОСТАВЬТЕ ОТЗЫВ <img src="images/icons8-send-48.png" alt="Почтовый конверт" /></h2>
                       <div class="subscribe-section">
                         <form action="https://api.web3forms.com/submit" method="POST">
                           <input type="hidden" name="access_key" value="433c1335-8551-4de2-b89b-182c7234019e">
-                          <input type="email" name="email" class="form-control" size="50"
+                          <input type="text" name="name" class="form-control"
+                            placeholder="Введите Ваше имя" required />
+                            <input type="email" name="email" class="form-control" 
                             placeholder="Введите Ваш E-mail" required />
-                          <button class="subscribe-section__button" type="submit">Отправить</button>
+                            <textarea name="text" id="text" rows="1" class="form-control" placeholder="Введите сообщение" maxlength="100"></textarea>
+                            <!-- <input type="text" id="message" name="message" class="form-control" 
+                            placeholder="Введите сообщение" maxlength="100" required /> -->
+                          <button class="subscribe-section__button" type="submit">Отправить </button>
+                        </form>
                       </div>
-                      </form>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <div class="footer__fourth">
-                      <h4 class="footer__title">ILYUSHIN & CO</h4>
+                      <h4 class="footer__title">НАШИ КОНТАКТЫ</h4>
                       <p class="footer-fourth__paragraph"></p>
                       <ul class="footer-first__social-icons">
                         <li>
@@ -272,6 +264,17 @@
                         </li>
                         <li>
                           <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                      </ul><br>
+                      <ul>
+                        <li>
+                          <span class="glyphicon glyphicon-envelope"></span>
+                          <a href="#" class="no-click"><span class="__cf_email__"
+                              data-cfemail="">9217771991@mail.ru</span></a>
+                        </li><br><br>
+                        <li>
+                          <span class="glyphicon glyphicon-earphone"></span>
+                          <a href="#" class="no-click">+7-921-777-19-91</a>
                         </li>
                       </ul>
                     </div>

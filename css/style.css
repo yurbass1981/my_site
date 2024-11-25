@@ -295,7 +295,6 @@
 
   .service__paragraph{
       font-size: 15px;
-      /* color: #8a8a8a; */
       color: #4f4f4f;
       text-shadow: rgb(120, 126, 131) 1px 0 10px;
     }
@@ -511,6 +510,11 @@
         border-radius: 24px;
       }
 
+  .footer__fourth .form-control{
+        padding: 21px 18px;
+        border-radius: 24px;
+      }
+
   @media screen and (max-width: 1199px) {
         .footer__third{
           padding-left: 20px;
@@ -534,10 +538,11 @@
         border: none;
         border-radius: 5px;
         position: absolute;
-        top: 50px;
+        top: 180px;
         right: 140px;
         cursor: pointer;
       }
+
 
   .footer .subscribe-section__button:hover {
     background-color: #0f4e7e;
@@ -587,9 +592,25 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0 20px;
   }
+
+  .subscribe-section input[type="text"]{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 42px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+/* 
+  #message {
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
 
   .pogodatab {
     background-color: #ffffff;
